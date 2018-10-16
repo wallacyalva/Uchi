@@ -1,0 +1,864 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rede UCHI - Visão Perfil Usuário</title>
+    <!-- Fontes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+    </style>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <header class="d-none d-md-block menuNormal">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="Rede UCHI" class="d-none d-md-inline-block">
+                    </a>
+                </div>
+                <div class="col-5">
+                    <form action="#" method="post">
+                        <input type="text" name="pesquisaPrinc" class="pesquisaPrinc" placeholder="O que deseja pesquisar?">
+                        <button type="submit">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-5 d-flex justify-content-end itens">
+                    <div class="notificacoes d-flex align-items-stretch justify-content-center">
+
+                        <div class="item">
+                            <img src="img/GONG.png" alt="Notificações">
+                            <div class="valor azul">+9</div>
+
+                            <div class="caixa notificacoes">
+                                <div class="title text-uppercase">
+                                    <h6>Notificações</h6>
+                                    <a href="#">Marcar tudo como lido</a>
+                                    <a href="#">Opções</a>
+                                </div>
+                                <div class="conteudo d-flex">
+                                    <ul class="lista">
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkNotificacao"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    A empresa <span class="nome">American Airline</span> enviou uma proposta para você.
+                                                </p>
+                                                <small>4 horas atrás</small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkNotificacao"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    Você e <span class="nome">Lucas Monteiro</span> agora são amigos.
+                                                </p>
+                                                <small>5 horas atrás</small>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkNotificacao"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    Infelimente sua proposta para o trabalho <span class="nome">Contrução de Apartamento</span> não foi aceita.
+                                                </p>
+                                                <small>7 horas atrás</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btFim azul text-uppercase">
+                                    Ver todos as notificações
+                                    <a href="#notificacoes"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <div class="valor vermelho">3</div>
+                            
+                            <div class="caixa amizades">
+                                <div class="title text-uppercase">
+                                    <h6>Pedidos de Amizade</h6>
+                                    <a href="#">Procurar Alguem</a>
+                                    <a href="#">Opções</a>
+                                </div>
+                                <div class="conteudo d-flex">
+                                    <ul class="lista">
+                                        <li>
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento amizade">
+                                                <a href="#linkPerfil"><span class="nome">Carlos Duarte</span></a>
+                                                <br>
+                                                <span>2 amigos em comum</span>
+                                            </div>
+                                            <div class="icones">
+                                                <div>
+                                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    <a href="#sim" title="Sim"></a>
+                                                </div>
+                                                <div class="no">
+                                                    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                    <a href="#nao" title="Não"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento amizade">
+                                                <a href="#linkPerfil"><span class="nome">Lucas Monteiro</span></a>
+                                                <br>
+                                                <span>2 amigos em comum</span>
+                                            </div>
+                                            <div class="icones">
+                                                <div>
+                                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    <a href="#sim" title="Sim"></a>
+                                                </div>
+                                                <div class="no">
+                                                    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                    <a href="#nao" title="Não"></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento amizade">
+                                                <a href="#linkPerfil"><span class="nome">Lucas Monteiro</span></a>
+                                                <br>
+                                                <span>2 amigos em comum</span>
+                                            </div>
+                                            <div class="icones">
+                                                <div data-url="#link5">
+                                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                    <a href="#sim" title="Sim" data-resposta="Amizade Feita! :)"></a>
+                                                </div>
+                                                <div class="no" data-url="#link5">
+                                                    <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                    <a href="#nao" title="Não" data-resposta="Amizade Negada! :("></a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btFim vermelho text-uppercase">
+                                    Ver todos os eventos
+                                    <a href="#amizades"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <div class="valor verde">2</div>
+                            
+                            <div class="caixa mensagens">
+                                <div class="title text-uppercase">
+                                    <h6>Chat / Mensagens</h6>
+                                    <a href="#">Marcar tudo como lido</a>
+                                    <a href="#">Opções</a>
+                                </div>
+                                <div class="conteudo d-flex">
+                                    <ul class="lista">
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkChat"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar2.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    <span class="nome">Jake Roger</span>
+                                                    <br>
+                                                    <p class="mensagem limitText">Olá, Matheus! Eu gostaria de saber mais sobre sua vida profissional, poderia enviar mais informações sobre você?</p>
+                                                </p>
+                                                <small>4 horas atrás</small>
+                                            </div>
+                                            <i class="fa fa-comments" aria-hidden="true"></i>
+                                        </li>
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkChat"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar2.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    <span class="nome">Luis Ricardo</span>
+                                                    <br>
+                                                    <p class="mensagem limitText">Já enviei a proposta para você, estou aguardando aceitar para iniciar o trabalho.</p>
+                                                </p>
+                                                <small>4 horas atrás</small>
+                                            </div>
+                                            <i class="fa fa-comments" aria-hidden="true"></i>
+                                        </li>
+                                        <li>
+                                            <!-- LINK PRINCIPAL -->
+                                            <a href="#linkChat"></a>
+                                            <!-- ############## -->
+                                            <div class="foto">
+                                                <img src="img/avatar.jpg" alt="avatar">
+                                            </div>
+                                            <div class="evento">
+                                                <p>
+                                                    <span class="nome">Fernanda Rodrigues</span>
+                                                    <br>
+                                                    <p class="mensagem limitText">O pagamento já feio realizado! Qualquer dúvida é só falar.</p>
+                                                </p>
+                                                <small>4 horas atrás</small>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="btFim verde text-uppercase">
+                                    Ver todas as mensagens
+                                    <a href="#mensagens"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="perfil">
+                        <strong>Fabrizio Feitosa</strong>
+                        <br>
+                        Engenheiro
+                        <div class="icon">
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                        </div>
+                        <a href="#perfil"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile -->
+    <header class="d-block d-md-none menuMobile">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 logo">
+                    <img src="img/logop.png" alt="Rede UCHI">
+                </div>
+                <div class="col-9 itens">
+                    <div class="notificacoes d-flex align-items-stretch justify-content-end">
+
+                        <div class="item item-notificacoes">
+                            <img src="img/GONG.png" alt="Notificações">
+                            <div class="valor azul">+9</div>
+                        </div>
+                        <div class="item item-amizades">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <div class="valor vermelho">3</div>
+                        </div>
+                        <div class="item item-mensagens">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <div class="valor verde">2</div>
+                        </div>
+                        <div class="item item-procurar">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="caixa cxc-notificacoes">
+                            <div class="title text-uppercase">
+                                <h6>Notificações</h6>
+                                <a href="#">Marcar tudo como lido</a>
+                                <a href="#">Opções</a>
+                            </div>
+                            <div class="conteudo d-flex">
+                                <ul class="lista">
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkNotificacao"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                A empresa <span class="nome">American Airline</span> enviou uma proposta para você.
+                                            </p>
+                                            <small>4 horas atrás</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkNotificacao"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                Você e <span class="nome">Lucas Monteiro</span> agora são amigos.
+                                            </p>
+                                            <small>5 horas atrás</small>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkNotificacao"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                Infelimente sua proposta para o trabalho <span class="nome">Contrução de Apartamento</span> não foi aceita.
+                                            </p>
+                                            <small>7 horas atrás</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btFim azul text-uppercase">
+                                Ver todos as notificações
+                                <a href="#notificacoes"></a>
+                            </div>
+                        </div>
+
+                        <div class="caixa cxc-amizades">
+                            <div class="title text-uppercase">
+                                <h6>Pedidos de Amizade</h6>
+                                <a href="#">Procurar Alguem</a>
+                                <a href="#">Opções</a>
+                            </div>
+                            <div class="conteudo d-flex">
+                                <ul class="lista">
+                                    <li>
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento amizade">
+                                            <a href="#linkPerfil"><span class="nome">Carlos Duarte</span></a>
+                                            <br>
+                                            <span>2 amigos em comum</span>
+                                        </div>
+                                        <div class="icones">
+                                            <div>
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                <a href="#sim" title="Sim"></a>
+                                            </div>
+                                            <div class="no">
+                                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                <a href="#nao" title="Não"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento amizade">
+                                            <a href="#linkPerfil"><span class="nome">Lucas Monteiro</span></a>
+                                            <br>
+                                            <span>2 amigos em comum</span>
+                                        </div>
+                                        <div class="icones">
+                                            <div>
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                <a href="#sim" title="Sim"></a>
+                                            </div>
+                                            <div class="no">
+                                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                <a href="#nao" title="Não"></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento amizade">
+                                            <a href="#linkPerfil"><span class="nome">Lucas Monteiro</span></a>
+                                            <br>
+                                            <span>2 amigos em comum</span>
+                                        </div>
+                                        <div class="icones">
+                                            <div data-url="#link5">
+                                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                                <a href="#sim" title="Sim" data-resposta="Amizade Feita! :)"></a>
+                                            </div>
+                                            <div class="no" data-url="#link5">
+                                                <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                                <a href="#nao" title="Não" data-resposta="Amizade Negada! :("></a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btFim vermelho text-uppercase">
+                                Ver todos os eventos
+                                <a href="#amizades"></a>
+                            </div>
+                        </div>
+
+                        <div class="caixa cxc-mensagens">
+                            <div class="title text-uppercase">
+                                <h6>Chat / Mensagens</h6>
+                                <a href="#">Marcar tudo como lido</a>
+                                <a href="#">Opções</a>
+                            </div>
+                            <div class="conteudo d-flex">
+                                <ul class="lista">
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkChat"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar2.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                <span class="nome">Jake Roger</span>
+                                                <br>
+                                                <p class="mensagem limitText">Olá, Matheus! Eu gostaria de saber mais sobre sua vida profissional, poderia enviar mais informações sobre você?</p>
+                                            </p>
+                                            <small>4 horas atrás</small>
+                                        </div>
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkChat"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar2.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                <span class="nome">Luis Ricardo</span>
+                                                <br>
+                                                <p class="mensagem limitText">Já enviei a proposta para você, estou aguardando aceitar para iniciar o trabalho.</p>
+                                            </p>
+                                            <small>4 horas atrás</small>
+                                        </div>
+                                        <i class="fa fa-comments" aria-hidden="true"></i>
+                                    </li>
+                                    <li>
+                                        <!-- LINK PRINCIPAL -->
+                                        <a href="#linkChat"></a>
+                                        <!-- ############## -->
+                                        <div class="foto">
+                                            <img src="img/avatar.jpg" alt="avatar">
+                                        </div>
+                                        <div class="evento">
+                                            <p>
+                                                <span class="nome">Fernanda Rodrigues</span>
+                                                <br>
+                                                <p class="mensagem limitText">O pagamento já feio realizado! Qualquer dúvida é só falar.</p>
+                                            </p>
+                                            <small>4 horas atrás</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btFim verde text-uppercase">
+                                Ver todas as mensagens
+                                <a href="#mensagens"></a>
+                            </div>
+                        </div>
+                        <div class="caixa cxc-procurar">
+                            <form action="#" method="post">
+                                <input type="text" name="pesquisaPrinc" class="pesquisaPrinc" placeholder="O que deseja pesquisar?">
+                                <button type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" style="margin-bottom: 14px;">
+        <div class="row cxInfor">
+            <div class="col-xs-12 col-md-5 col-xl-4 zeroPadding fotoNome">
+                <div class="fotoPerfil">
+                    <img src="img/perfil.png">
+                </div>
+                <div class="nomeInfor">
+                    <h1>Fabrizio Feitosa</h1>
+                    <p>Ingressou: 01 de Janeiro de 2017</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-7 col-xl-8 zeroPadding bioBt">
+ 				<div class="row">
+ 					<div class="col-12 col-md-9">
+						<p class="text-uppercase" style="font-weight: bold;">Sobre mim:</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum leo ut ipsum sodales, vel fermentum enim gravida. Donec faucibus, urna at eleifend viverra, lacus neque scelerisque erat, vel interdum.</p>
+						<div class="maisInfor">
+							<div class="localizacao"><span class="text-uppercase">Localização:</span> Fortaleza - CE</div>
+               				<div class="social">
+               					<span class="text-uppercase">Social:</span>
+               					<a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+               					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               					<a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+               					<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+               					<a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+               					<a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+               				</div>
+               				<div class="verMais text-uppercase">
+               					<a href="#verMais">+ Ver Mais</a>
+               				</div>
+						</div>
+               		</div>
+               		<div class="col-12 col-md-3 btns">
+               			<div class="text-uppercase caixaBordaPadrao">Enviar Mensagem<a href="#EnviarMensagem"></a></div>
+               			<!-- TIPOS DE BOTÕES -->
+               			
+               			<div class="text-uppercase caixaBordaAzul"><i class="fa fa-plus" aria-hidden="true"></i> Adicionar<a href="#"></a></div>
+               			<!--<div class="text-uppercase caixaBordaAmarelo"><i class="fa fa-clock-o" aria-hidden="true"></i> Aguardando<a href="#"></a></div>
+               			<div class="text-uppercase caixaBordaVerde"><i class="fa fa-check" aria-hidden="true"></i> Amigos<a href="#"></a></div>
+               			<div class="text-uppercase caixaPadraoBlock"><i class="fa fa-lock" aria-hidden="true"></i> Fechado</div> -->
+               			
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-3 zeroPadding">
+                <div class="cxRanking">
+                    <div class="imgBackground" style="background: url(img/backgroundProfissao.jpg);"></div>
+                    <div class="rankInfor">
+                        <div class="trofeu"><img src="img/trofeu.png"></div>
+                        <p class="text-center posicao">Ranking: #23024</p>
+                        <p class="text-center categoria">Categoria ENGENHEIRO</p>
+                        <div class="barras">
+                            <div class="grupo">
+                                <div class="barra">
+                                    <div class="analitico" style="width: 70%;"></div>
+                                </div>
+                                <div class="porcent">70%</div>
+                            </div>
+                            <div class="grupo">
+                                <div class="barra">
+                                    <div class="criativo" style="width: 30%;"></div>
+                                </div>
+                                <div class="porcent">30%</div>
+                            </div>
+                            <div class="grupo">
+                                <div class="barra">
+                                    <div class="operacional" style="width: 80%;"><img src="img/destaque.png" class="destaque"></div>
+                                </div>
+                                <div class="porcent">80%</div>
+                            </div>
+                            <div class="grupo">
+                                <div class="barra">
+                                    <div class="relacional" style="width: 45%;"></div>
+                                </div>
+                                <div class="porcent">45%</div>
+                            </div>
+                        </div>
+                        <p class="desc">
+                            <span class="text-uppercase txtAzul">Analítico</span> | 
+                            <span class="text-uppercase txtAmarelo">Criativo</span> | 
+                            <span class="text-uppercase txtVermelho">operaciona</span>l | 
+                            <span class="text-uppercase txtVerde">relacional</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="caixaPadrao meusGrupos">
+					<div class="titulo">Meus Grupos</div>
+					<div class="conteudo">
+						<div class="d-flex justify-content-between align-items-center caixa">
+							<div class="foto">
+								<a href="#linkGrupo">
+									<img src="img/grupo-img1.png" alt="Imagem Grupo">
+								</a>
+							</div>
+							<div class="infor">
+								<strong>Foto Engenharia</strong>
+								<br>
+								<small>24 amigos no grupo</small>
+							</div>
+							<div class="bt">
+								<div class="relative">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+									<a class="tudo" href="#linkGrupo"></a>
+								</div>
+							</div>
+						</div>
+						<!-- \ -->
+						<div class="d-flex justify-content-between align-items-center caixa">
+							<div class="foto">
+								<a href="#linkGrupo">
+									<img src="img/grupo-img1.png" alt="Imagem Grupo">
+								</a>
+							</div>
+							<div class="infor">
+								<strong>Engenhoca</strong>
+								<br>
+								<small>36 amigos no grupo</small>
+							</div>
+							<div class="bt">
+								<div class="relative ok">
+									<i class="fa fa-check" aria-hidden="true"></i>
+									<a class="tudo" href="#linkGrupo"></a>
+								</div>
+							</div>
+						</div>
+						<!-- \ -->
+						<div class="d-flex justify-content-between align-items-center caixa">
+							<div class="foto">
+								<a href="#linkGrupo">
+									<img src="img/grupo-img1.png" alt="Imagem Grupo">
+								</a>
+							</div>
+							<div class="infor">
+								<strong><i class="fa fa-lock" aria-hidden="true"></i> Animal Rock</strong>
+								<br>
+								<small>Nenhum amigo no grupo</small>
+							</div>
+							<div class="bt">
+								<div class="relative espera">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+									<a class="tudo" href="#linkGrupo"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <div class="anuncio">
+                    <img src="img/propaganda2.png" class="img-fluid" alt="Anuncio">
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-6">
+                <div class="caixaPadrao conteudoMeio">
+
+                    <div class="conteudo">
+
+                        <div class="post">
+                            <div class="opt">
+                                <div class="button">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </div>
+                                <div class="caixa">
+                                    <ul>
+                                        <li><i class="fa fa-pencil" aria-hidden="true"></i> Editar</li>
+                                        <li><i class="fa fa-times" aria-hidden="true"></i> Excluir</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="linha fixa">02 . FEV . 2017</div>
+                            </div>
+                            <div class="post-txt">
+                                <p>Suspendisse dolor turpis, imperdiet sit amet congue sed, ultricies sed risus. Pellentesque fringilla sapien in pharetra gravida. Donec lobortis risus vel tellus eleifend blandit. Pellentesque varius, nisl in dignissim commodo, purus orci ullamcorper leo, imperdiet dictum leo ligula ac lectus. Suspendisse et felis vel quam rhoncus venenatis id at ipsum.</p>
+                                <p>Integer pretium efficitur sem, nec luctus mi interdum eu. Cras suscipit, nisi ac elementum congue, nulla dui lobortis libero, eu elementum lacus urna eget risus. In eget tincidunt tellus. Proin egestas arcu eu leo euismod ornare. In a quam non ligula dapibus convallis. Maecenas venenatis eu odio et lobortis. Suspendisse.</p>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="opt">
+                                <div class="button">
+                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                </div>
+                                <div class="caixa">
+                                    <ul>
+                                        <li><i class="fa fa-pencil" aria-hidden="true"></i> Editar</li>
+                                        <li><i class="fa fa-times" aria-hidden="true"></i> Excluir</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="data">
+                                <div class="linha">02 . FEV . 2017</div>
+                            </div>
+                            <div class="post-img">
+                                <img src="img/post1.png" alt="Imagem">
+                                <img src="img/post2.png" alt="Imagem">
+                                <img src="img/post3.png" alt="Imagem">
+                                <img src="img/post2.png" alt="Imagem">
+                                <img src="img/post2.png" alt="Imagem">
+                                <img src="img/post1.png" alt="Imagem">
+                            </div>
+                            <div class="post-txt">
+                                <p>Pellentesque varius, nisl in dignissim commodo, purus orci ullamcorper leo, imperdiet dictum leo ligula ac lectus. Suspendisse et felis vel quam rhoncus venenatis id at ipsum.</p>
+                            </div>
+                        </div>
+
+                        <div class="anuncio">
+                            <img src="img/propaganda1.png" class="img-fluid" alt="Anuncio">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-3 zeroPadding">
+                <div class="caixaPadrao caixaRecomendacoes">
+					<div class="titulo">Recomendações</div>
+					<div class="conteudo">
+						<div class="post relative">
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="foto">
+									<img src="img/recomendacoes-img1.png" alt="Foto Recomendações">
+								</div>
+								<div class="coment">
+									"<span class="txt">Excelente profissional! Gostei bastante de trabalhar!</span>"
+								</div>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="estrelas">
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</div>
+								<div class="data text-uppercase">10 . Mar . 2017</div>
+							</div>
+							<a href="#abrirModalRecomendacao" class="tudo"></a>
+						</div>
+						<!-- \ -->
+						<div class="post relative">
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="foto">
+									<img src="img/recomendacoes-img2.png" alt="Foto Recomendações">
+								</div>
+								<div class="coment">
+									"<span class="txt">Tivemos algumas complicações mas no fim deu certo.</span>"
+								</div>
+							</div>
+							<div class="d-flex justify-content-between align-items-center">
+								<div class="estrelas">
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star amarelo" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+								</div>
+								<div class="data text-uppercase">02 . Jan . 2017</div>
+							</div>
+							<a href="#abrirModalRecomendacao" class="tudo"></a>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="caixaPadrao caixaAmigos">
+					<div class="titulo">Amigos (84)</div>
+					<div class="conteudo">
+						<div><a href="#"><img src="img/amigo-img1.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img2.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img3.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img4.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img5.png" alt="Foto Amigo"></a></div>
+						
+						<div><a href="#"><img src="img/amigo-img5.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img4.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img1.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img2.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img3.png" alt="Foto Amigo"></a></div>
+						
+						<div><a href="#"><img src="img/amigo-img1.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img2.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img3.png" alt="Foto Amigo"></a></div>
+						<div><a href="#"><img src="img/amigo-img4.png" alt="Foto Amigo"></a></div>
+						
+						<div class="ultimo relative">
+							<span>+70</span>
+							<a href="#linkMaisAmigos" class="tudo"></a>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="caixaPadrao caixaEmpresas">
+					<div class="titulo">Empresas</div>
+					<div class="conteudo">
+						<div class="d-flex justify-content-between align-items-center caixa">
+							<div class="foto">
+								<a href="#linkGrupo">
+									<img src="img/empresa-img1.png" alt="Imagem Grupo">
+								</a>
+							</div>
+							<div class="infor">
+								<strong>Marine PUB</strong>
+								<br>
+								<small>Restaurante / Bar</small>
+							</div>
+							<div class="relative star">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<a class="tudo" href="#linkGrupo"></a>
+							</div>
+						</div>
+						<!-- \ -->
+						<div class="d-flex justify-content-between align-items-center caixa">
+							<div class="foto">
+								<a href="#linkGrupo">
+									<img src="img/empresa-img2.png" alt="Imagem Grupo">
+								</a>
+							</div>
+							<div class="infor">
+								<strong>Flash log</strong>
+								<br>
+								<small>Transportadora</small>
+							</div>
+							<div class="relative star plus">
+								<i class="fa fa-star-o" aria-hidden="true"></i>
+								<a class="tudo" href="#linkGrupo"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <footer>
+        Rede UCHI - Todos os direitos reservados - 2017
+    </footer>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/perfect-scrollbar.js"></script>
+
+<!-- JS Theme -->
+<script src="js/theme.js"></script>
+
+</body>
+</html>

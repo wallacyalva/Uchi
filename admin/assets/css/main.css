@@ -1,0 +1,117 @@
+@font-face{font-family:"avenir";src:url("../css/avenir/fonts/avenir.ttc");src:url("../css/fonts/avenir/avenir.ttc") format("truetype"),url("../css/fonts/avenir/avenir-book.otf") format("otf");url("../css/fonts/avenir/avenir-book.otf") format("otf");url("../css/fonts/avenir/avenir-book.otf") format("otf");font-weight:normal;font-style:normal}
+#body{
+  font-family: avenir;
+}
+#header{
+  border-top: solid 6px #c0c0c0;
+  background-color: #FFF;
+}
+.row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+.centering {
+  float:none;
+  margin:0 auto;
+}
+#cidade .icon-default i{
+  font-size: 2em;
+  color: #c0c0c0;
+  cursor: pointer;
+}
+#busca span{
+  background-color: #FFF;
+}
+#busca input{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+#busca .input-group-addon{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.login a{
+  border-radius: 1.5em;
+  height: 30px;
+  color: #FFF;
+}
+.login-span{
+  font-size: 0.8em;
+  color: #c0c0c0;
+
+}
+.login-cad{
+  font-size: 0.8em;
+  color: #f4cd3e;
+  text-decoration: none;
+}
+.login-cad a:hover{
+  font-size: 0.8em;
+  color: #fde06a;
+  text-decoration: none;
+}
+.footer-carousel button{
+  background-color: #FFF;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #333;
+  font-size: 10px;
+  padding: 8px;
+  height: 30px;
+  line-height: 1;
+}
+.card{
+  margin-right: 20px;
+}
+.card-text{
+  text-align: center;
+}
+.card-body a{
+color: black;
+}
+.footer-top{
+  margin-top: 20px;
+  border-top: solid 2px #c0c0c0;
+  background-color: #FFF;
+  font-size: 0.8em;
+  height: auto;
+}
+.footer-top i{
+color: #f4cd3e;
+}
+.footer-bottom{
+  font-size: 0.7em;
+}
+.fixed-top .navbar-light{
+  height: 140px;
+  border-top: solid 3px #e5e6e7;
+  padding-top: 17px;
+}
+
+.product-block-container{
+  padding: 5px !important;
+}
+
+.btn-group{
+  width: 100%;
+}
+
+.fixar {
+  position:fixed;
+  margin-top: 115px !important;
+}
+
+.mapa{
+  height: 342px !important;
+}
+
+.container-page{
+  margin-top: 250px !important;
+}
+
+.select-category{
+  width: 100% !important;
+  height: 50px !important;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+  background-color: #e4b714;
+  border-color: #e4b714;
+}
